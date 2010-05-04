@@ -1,0 +1,6 @@
+[submodule "textmate/bundles/GetBundles.tmbundle"]
+	path = textmate/bundles/GetBundles.tmbundle
+	url = http://github.com/adamsalter/GetBundles.tmbundle.git
+[submodule "textmate/bundles/Cucumber.tmbundle"]
+	path = textmate/bundles/Cucumber.tmbundle
+	url = http://github.com/aslakhellesoy/cucumber-tmbundle.git
