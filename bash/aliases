@@ -15,7 +15,6 @@ alias sc='./script/console'
 alias sd='./script/dbconsole'
 alias sg='./script/generate'
 alias cuc='cucumber'
-alias cuo='cucumber _0.3.11.6_'
 alias spek='spec -c'
 
 # git
