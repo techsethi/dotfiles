@@ -44,12 +44,12 @@ alias gx='gitx'
 alias gxc='gitx -c'
 
 # mysql
-alias mstart='/usr/local/Cellar/mysql/5.1.45/share/mysql/mysql.server start'
-alias mstop='/usr/local/Cellar/mysql/5.1.45/share/mysql/mysql.server stop'
+alias mstart='/usr/local/Cellar/mysql/current/share/mysql/mysql.server start'
+alias mstop='/usr/local/Cellar/mysql/current/share/mysql/mysql.server stop'
 
 # postgres
 alias pstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
-alias ms='mongod run --config /usr/local/Cellar/mongodb/mongodb/mongod.conf'
+alias ms='mongod run --config /usr/local/Cellar/mongodb/current/mongod.conf'
 
