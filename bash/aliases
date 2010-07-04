@@ -18,30 +18,23 @@ alias cuc='cucumber'
 alias spek='spec -c'
 
 # git
-alias gitc='git commit -m'
 alias gadd='git add -u && git add . && git status'
+alias gam='git commit --amend -CHEAD'
 alias gap='git add -p'
 alias gb='git branch'
 alias gca='git commit --all'
 alias gco='git checkout'
 alias gd='git diff'
 alias gdc='git diff --cached'
-alias gie='find . \( -type d -empty \) -and \( -not -regex ./\.git.* \) -exec touch {}/.gitignore \;'
+alias gitc='git commit -m'
 alias gl='git log'
-alias gld='git ls-files --deleted'
-alias glf='git ls-files'
-alias gpl='git pull --rebase && git submodule update'
-alias gra='git ls-files --deleted | xargs git rm'
+alias gpl='git pull --rebase && git submodule init && git submodule update'
+alias grd='git ls-files --deleted | xargs git rm'
 alias gsl='git stash list'
 alias gsp='git stash pop'
+alias gss='git stash save'
 alias gst='git status'
-alias gsu='git submodule update --init'
-
-alias stash='git stash save'
-
-# gitx
-alias gx='gitx'
-alias gxc='gitx -c'
+alias gsu='git submodule init && git submodule update'
 
 # mysql
 alias mstart='/usr/local/Cellar/mysql/current/share/mysql/mysql.server start'
