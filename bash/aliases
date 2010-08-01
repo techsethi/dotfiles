@@ -18,7 +18,7 @@ alias cuc='cucumber'
 alias spek='spec -f n -c'
 
 # git
-alias gadd='git add -u && git add . && git status'
+alias gadd='git add -u && git add . && git status -sb'
 alias gam='git commit --amend -CHEAD'
 alias gap='git add -p'
 alias gb='git branch'
