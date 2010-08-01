@@ -15,7 +15,7 @@ alias sc='./script/console'
 alias sd='./script/dbconsole'
 alias sg='./script/generate'
 alias cuc='cucumber'
-alias spek='spec -c'
+alias spek='spec -f n -c'
 
 # git
 alias gadd='git add -u && git add . && git status'
