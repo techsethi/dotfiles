@@ -14,7 +14,7 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
   end
 end
 
-Wirble.init
+Wirble.init if defined?(Wirble)
 
 class Object
   # list methods which aren't in superclass
@@ -43,7 +43,7 @@ end
 
 def copy_history
   history = Readline::HISTORY.entries
-  index = history.rindex("exit") || -1
+  index   = history.rindex("exit") || -1
   content = history[(index+1)..-2].join("\n")
   puts content
   copy content
