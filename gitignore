@@ -4,3 +4,5 @@
 *.tmproj
 webrat*.html
 *.swp
+doc/tags
+
