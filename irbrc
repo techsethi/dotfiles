@@ -1,23 +1,17 @@
-#!/usr/bin/env ruby
+require 'rubygems'
+require 'looksee/shortcuts'
+require 'wirble'
 
-require 'irb/completion'
-require 'irb/ext/save-history'
+Wirble.init
+Wirble.colorize
 
 IRB.conf[:SAVE_HISTORY] = 1000
+IRB.conf[:EVAL_HISTORY] = 200
+IRB.conf[:AUTO_INDENT]  = true
 IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
-IRB.conf[:PROMPT_MODE] = :SIMPLE
-
-%w[rubygems looksee/shortcuts wirble].each do |gem|
-  begin
-    require gem
-  rescue LoadError
-  end
-end
-
-Wirble.init if defined?(Wirble)
+IRB.conf[:PROMPT_MODE]  = :SIMPLE
 
 class Object
-  # list methods which aren't in superclass
   def local_methods(obj = self)
     (obj.methods - obj.class.superclass.instance_methods).sort
   end
@@ -49,8 +43,13 @@ def copy_history
   copy content
 end
 
+def me
+  User.find_by_email 'grillpanda@me.com'
+end
+
 def paste
   `pbpaste`
 end
 
 load File.dirname(__FILE__) + '/.railsrc' if $0 == 'irb' && ENV['RAILS_ENV']
+
