@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'ap'
 require 'looksee/shortcuts'
 require 'wirble'
 
