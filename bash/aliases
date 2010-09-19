@@ -1,11 +1,8 @@
-alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias h=history
 alias ll='ls -l'
-
-alias p='cd ~/projects && ls -l'
 
 # ruby / rails
 alias migrate='rake db:migrate db:test:prepare'
