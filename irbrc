@@ -45,7 +45,7 @@ def copy_history
 end
 
 def me
-  User.find_by_email 'grillpanda@me.com'
+  User.find_by_email 'grillpanda@gmail.com'
 end
 
 def paste
