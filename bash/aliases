@@ -4,13 +4,18 @@ alias ....='cd ../../..'
 alias h=history
 alias ll='ls -l'
 
-# ruby / rails
-alias migrate='rake db:migrate db:test:prepare'
-alias remigrate='rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare'
+# rails < 3
 alias ss='./script/server'
 alias sc='./script/console'
 alias sd='./script/dbconsole'
 alias sg='./script/generate'
+
+#rails >= 3
+alias con='rails console'
+alias dbcon='rails dbconsole'
+alias gen='rails generate'
+alias server='rails server'
+
 alias cuc='cucumber'
 alias spek='spec -f n -c'
 
