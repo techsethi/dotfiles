@@ -3,6 +3,7 @@
 *~
 *.tmproj
 webrat*.html
+*.swo
 *.swp
 doc/tags
 tmtags
