@@ -1,10 +1,10 @@
 require 'rubygems'
-require 'ap'
-require 'looksee/shortcuts'
-require 'wirble'
 
-Wirble.init
-Wirble.colorize
+begin
+  require 'ap'
+  require 'looksee/shortcuts'
+rescue
+end
 
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:EVAL_HISTORY] = 200
