@@ -10,13 +10,17 @@ alias sc='./script/console'
 alias sd='./script/dbconsole'
 alias sg='./script/generate'
 
-#rails >= 3
+# rails >= 3
 alias con='rails console'
 alias dbcon='rails dbconsole'
 alias gen='rails generate'
 alias server='rails server'
 
-alias cuc='cucumber'
+# bundler
+alias be='bundle exec'
+alias biv='bundle install --path vendor'
+alias bl='bundle list'
+
 alias spek='spec -f n -c'
 
 # git
@@ -43,4 +47,6 @@ alias pstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serve
 alias pstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 alias ms='mongod run --config /usr/local/Cellar/mongodb/current/mongod.conf'
+
+alias redis='redis-server /usr/local/etc/redis.conf'
 
