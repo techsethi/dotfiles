@@ -1,9 +1,0 @@
-[submodule "textmate/bundles/GetBundles.tmbundle"]
-	path = textmate/bundles/GetBundles.tmbundle
-	url = git://github.com/adamsalter/GetBundles.tmbundle.git
-[submodule "textmate/bundles/Cucumber.tmbundle"]
-	path = textmate/bundles/Cucumber.tmbundle
-	url = git://github.com/aslakhellesoy/cucumber-tmbundle.git
-[submodule "vendor/solarized"]
-	path = vendor/solarized
-	url = git://github.com/altercation/solarized.git
