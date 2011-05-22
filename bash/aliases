@@ -4,6 +4,9 @@ alias ....='cd ../../..'
 alias h=history
 alias ll='ls -l'
 
+alias less='less -isR'
+alias ri='ri -Tf ansi'
+
 # rails < 3
 alias ss='./script/server'
 alias sc='./script/console'
