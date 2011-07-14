@@ -2,7 +2,7 @@ require 'rubygems'
 
 begin
   require 'ap'
-  require 'looksee/shortcuts'
+  require 'looksee'
 rescue
 end
 
