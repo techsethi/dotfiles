@@ -24,7 +24,7 @@ alias be='bundle exec'
 alias biv='bundle install --path vendor'
 alias bl='bundle list'
 
-alias spek='spec -f n -c'
+alias spec='spec -f n -c'
 
 # git
 alias gadd='git add -u && git add . && git status -sb'
