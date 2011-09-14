@@ -13,21 +13,15 @@ namespace :dotfiles do
     end
   end
 
-  def source_files
-    `source ~/.bashrc`
-  end
-
   desc 'Install dotfiles to home directory'
   task :install do
     link_files
-    source_files
-    puts 'all done'
-  end
+    puts <<-TEXT
+      Dotfiles have been installed.
+      To start using them, close this window and open a new one, or run:
 
-  desc 'Update dotfiles'
-  task :update do
-    `git pull --rebase`
-    source_files
+      source ~/.bashrc
+    TEXT
   end
 
 end

@@ -12,18 +12,12 @@ Clone this repository to ~/.dotfiles.
 
     git clone git://github.com/grillpanda/dotfiles.git ~/.dotfiles
 
-Run the install task.
+Run the install task and reload your bash profile.
 
     cd ~/.dotfiles
     rake dotfiles:install
+    source ~/.bashrc
 
 # Local user configuration
 
 The bashrc file included here will load ~/.bashrc.local if it can be found. You can use this for any further bash configuration you need.
-
-# Updating
-
-You can pull down changes to dotfiles with the update task.
-
-    cd ~/.dotfiles
-    rake dotfiles:update
