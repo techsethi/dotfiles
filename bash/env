@@ -1,7 +1,0 @@
-export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/mongodb/bin:/usr/local/rabbitmq/sbin:$PATH"
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
-
-export EDITOR='vim -Nf'
-export EVENT_NOKQUEUE=yes
-export HISTCONTROL=ignoredups
-export NODE_PATH="/usr/local/lib/node:$NODE_PATH"
