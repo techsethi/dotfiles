@@ -1,3 +1,5 @@
+alias git='hub'
+
 alias gadd='git add -u && git add . && git status -sb'
 alias gam='git commit --amend -CHEAD'
 alias gap='git add -p'
