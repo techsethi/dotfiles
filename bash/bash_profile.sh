@@ -2,7 +2,7 @@ for file in ~/.dotfiles/bash/includes/*.sh; do
   [[ -r $file ]] && source $file;
 done
 
-for file in ~/.dotfiles/bash/includes/aliases/*.sh; do
+for file in ~/.dotfiles/aliases/*.sh; do
   [[ -r $file ]] && source $file;
 done
 
