@@ -1,4 +1,3 @@
-alias ..='cd ..'
 alias h=history
 alias la='ls -lA'
 alias ll='ls -l'

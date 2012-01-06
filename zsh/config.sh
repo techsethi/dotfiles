@@ -1,17 +1,46 @@
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+# Changing directories
+setopt AUTO_CD          # Auto change to directories
+setopt AUTO_PUSHD       # Automatically pushd
+setopt CDABLE_VARS      # Treat non-directories not beginning with / as beginning with ~/
+setopt PUSHD_SILENT     # Don’t print stack with pushd or popd
+setopt PUSHD_TO_HOME    # Pushd with no args is `pushd $HOME'
 
-setopt AUTO_CD
-unsetopt LIST_BEEP
-
+# Completion
+setopt ALWAYS_TO_END
 setopt AUTO_MENU
 setopt COMPLETE_IN_WORD
-setopt ALWAYS_TO_END
+unsetopt LIST_BEEP
 unsetopt MENU_COMPLETE
 
-setopt APPEND_HISTORY                 # add history
-setopt INC_APPEND_HISTORY             # write history incrementally
-setopt SHARE_HISTORY                  # history is shared across sessions
-setopt HIST_IGNORE_ALL_DUPS           # don't allow dupes in history
-setopt HIST_REDUCE_BLANKS             # trim whitespace before adding to history
+# Expansion / Globbing
+setopt EXTENDED_GLOB
+setopt NOMATCH
+
+# History
+setopt APPEND_HISTORY       # Add history
+setopt HIST_IGNORE_ALL_DUPS # Don't allow dupes in history
+setopt HIST_REDUCE_BLANKS   # Trim whitespace before adding to history
+setopt HIST_VERIFY          # Don’t immediately execute expanded history
+setopt INC_APPEND_HISTORY   # Write history incrementally
+setopt SHARE_HISTORY        # History is shared across sessions
+
+# Input/Output
+setopt CORRECT_ALL
+
+# Job Control
+unsetopt BG_NICE      # Don’t nice background jobs
+setopt LONG_LIST_JOBS
+
+# Prompting
+setopt PROMPT_SUBST # Perform substitution in prompts
+
+unsetopt BEEP
+unsetopt NOTIFY
+
+bindkey -v # Vim key bindings
+
+HISTFILE=~/.zsh-histfile
+HISTSIZE=2000
+SAVEHIST=2000
+
+export PATH="$HOME/bin:$PATH"
