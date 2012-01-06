@@ -1,3 +1,4 @@
+alias c=clear
 alias h=history
 alias la='ls -lA'
 alias ll='ls -l'
