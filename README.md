@@ -1,3 +1,6 @@
-No longer maintained.
+# dotfiles
 
-Deprecated in favour of [Pivotal workstation](https://github.com/pivotal/pivotal_workstation) and [grillstation](https://github.com/grillpanda/grillstation).
+A bunch of config files.
+
+Includes my settings for bash (not getting much love)
+and zsh (current favourite child).
