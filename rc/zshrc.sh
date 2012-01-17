@@ -1,4 +1,5 @@
 source ~/.dotfiles/zsh/config.sh
+source ~/.dotfiles/zsh/aws.sh
 source ~/.dotfiles/zsh/prompt.sh
 source ~/.dotfiles/zsh/completion.sh
 source ~/.dotfiles/zsh/aliases.sh
