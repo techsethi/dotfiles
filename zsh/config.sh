@@ -37,7 +37,7 @@ setopt PROMPT_SUBST # Perform substitution in prompts
 unsetopt BEEP
 unsetopt NOTIFY
 
-bindkey -v # Vim key bindings
+bindkey -e # Emacs key bindings for now
 
 HISTFILE=~/.zsh-histfile
 HISTSIZE=2000
