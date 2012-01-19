@@ -43,4 +43,4 @@ HISTFILE=~/.zsh-histfile
 HISTSIZE=2000
 SAVEHIST=2000
 
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
