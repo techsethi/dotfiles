@@ -9,6 +9,8 @@ for file in ~/.dotfiles/aliases/*.sh; do
   [[ -r $file ]] && source $file;
 done
 
+[[ -r "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
+
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 __rvm_project_rvmrc
