@@ -38,6 +38,7 @@ unsetopt BEEP
 unsetopt NOTIFY
 
 bindkey -e # Emacs key bindings for now
+bindkey '^R' history-incremental-search-backward
 
 HISTFILE=~/.zsh-histfile
 HISTSIZE=2000
