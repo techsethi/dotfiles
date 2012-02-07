@@ -3,6 +3,7 @@ source ~/.dotfiles/zsh/aws.sh
 source ~/.dotfiles/zsh/prompt.sh
 source ~/.dotfiles/zsh/completion.sh
 source ~/.dotfiles/zsh/aliases.sh
+source ~/.dotfiles/zsh/functions.sh
 
 # Aliases common to zsh and bash
 for file in ~/.dotfiles/aliases/*.sh; do
