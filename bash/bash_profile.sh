@@ -1,3 +1,5 @@
+export PATH="/usr/local/bin:$PATH"
+
 for file in ~/.dotfiles/bash/includes/*.sh; do
   [[ -r $file ]] && source $file;
 done
