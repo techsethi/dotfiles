@@ -1,5 +1,5 @@
 export PATH="/usr/local/bin:$PATH"
-export CDPATH=".:..:~/_/songkick"
+export CDPATH=".:..:~:~/_/songkick"
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
