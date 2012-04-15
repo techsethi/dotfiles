@@ -1,5 +1,5 @@
 export PATH="/usr/local/bin:$PATH"
-export CDPATH=".:..:~:~/_/songkick"
+export CDPATH=".:..:~:~/_/songkick:~/Ark/Code"
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
@@ -9,7 +9,7 @@ for file in ~/.dotfiles/bash/includes/*.sh; do
   [[ -r $file ]] && source $file;
 done
 
-for file in ~/.dotfiles/aliases/*.sh; do
+for file in ~/.dotfiles/bash/includes/aliases/*.sh; do
   [[ -r $file ]] && source $file;
 done
 
