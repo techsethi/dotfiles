@@ -9,6 +9,9 @@ for file in ~/.dotfiles/bash/includes/*.sh; do
   [[ -r $file ]] && source $file;
 done
 
-eval "$(rbenv init -)"
+if [ -s "$HOME/.rbenv/bin" ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 if [ -s ~/.bash_profile.local ]; then source ~/.bash_profile.local; fi
