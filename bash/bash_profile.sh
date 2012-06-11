@@ -9,7 +9,7 @@ for file in ~/.dotfiles/bash/includes/*.sh; do
   [[ -r $file ]] && source $file;
 done
 
-if [ -s "$HOME/.rbenv/bin" ]; then
+if [ -s "$HOME/.rbenv" ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
