@@ -1,6 +1,9 @@
 alias ios='open "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone Simulator.app"'
 
-alias git='hub'
+which hub > /dev/null && {
+  alias git='hub'
+}
+
 alias gadd='git add -u && git add . && git status'
 alias gam='git commit --amend -CHEAD'
 alias gap='git add -p'
@@ -36,4 +39,7 @@ alias la='ls -lA'
 alias ll='ls -l'
 alias ..='cd ..'
 alias less='less -isR'
-alias vim='mvim -v'
+
+which mvim > /dev/null && {
+  alias vim='mvim -v'
+}
