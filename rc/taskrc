@@ -1,8 +1,8 @@
 data.location=~/Dropbox/Task
 
-dateformat=y-b-d
-dateformat.report=y-b-d
-dateformat.holiday=YMD
-dateformat.annotation=y-b-d
+dateformat=D.M.Y
+dateformat.report=D.M.Y
+dateformat.holiday=DMY
+dateformat.annotation=D.M.Y
 weekstart=Monday
 default.command=ls
