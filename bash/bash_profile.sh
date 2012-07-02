@@ -8,13 +8,12 @@ which brew > /dev/null && {
   fi
 }
 
+which rbenv > /dev/null && {
+  eval "$(rbenv init -)"
+}
+
 for file in ~/.dotfiles/bash/includes/*.sh; do
   [[ -r $file ]] && source $file;
 done
-
-if [ -s "$HOME/.rbenv" ]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
-fi
 
 if [ -s ~/.bash_profile.local ]; then source ~/.bash_profile.local; fi
