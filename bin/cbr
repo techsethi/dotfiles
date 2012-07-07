@@ -1,0 +1,19 @@
+#! /usr/bin/env ruby
+
+def rename_file(file)
+  path  = File.expand_path(file)
+  name  = File.basename(path, '.*')
+  dir   = File.dirname(path)
+  ext   = File.extname(path)
+
+  number_and_junk = name.match(/(\d+)(?: *\(.+)$/)
+  return unless number_and_junk
+
+  padded_issue_num  = "%03d" % number_and_junk[1].to_i
+  new_name          = number_and_junk.pre_match + padded_issue_num + ext
+  new_path          = File.join(dir, new_name.squeeze(' '))
+
+  File.rename(path, new_path)
+end
+
+Dir['./**/*.cb[rz]'].each(&method(:rename_file))
