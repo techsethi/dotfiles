@@ -16,4 +16,5 @@ for file in ~/.dotfiles/bash/includes/*.sh; do
   [[ -r $file ]] && source $file;
 done
 
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 if [ -s ~/.bash_profile.local ]; then source ~/.bash_profile.local; fi
