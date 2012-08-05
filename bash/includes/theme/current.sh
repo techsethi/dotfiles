@@ -27,6 +27,5 @@ function git_prompt_info {
   fi
 }
 
-# \[\033[G\]: goto first col
-PROMPT="\[\033[G\]\[${bold_yellow}\]\w\[${bold_blue}\]\[\$(git_prompt_info)\]\[${normal}\]\[${reset_color}\] → "
+PROMPT="\[${bold_yellow}\]\w\[${bold_blue}\]\[\$(git_prompt_info)\]\[${normal}\]\[${reset_color}\] → "
 PS1=$PROMPT
