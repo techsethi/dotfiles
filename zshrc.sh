@@ -1,20 +1,16 @@
 # All options specified with setopt/unsetopt can be found in `man zshoptions`
 
+export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
+export PATH="$HOME/bin:$PATH"
+
 # Edit with Vim
 export EDITOR='vim -Nf'
 export GIT_EDITOR='vim -Nf'
 
 # Prompt
-autoload -U promptinit
-promptinit
-prompt grb
-
 setopt prompt_subst
 
 # Colour
-autoload -U colors
-colors
-
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;33'
 
@@ -66,6 +62,8 @@ setopt mark_dirs
 setopt correct
 setopt correct_all
 
+bindkey "^R" history-incremental-search-backward
+
 # Jobs
 setopt long_list_jobs
 
@@ -77,8 +75,8 @@ which rbenv > /dev/null && {
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-# Aliases
-source $HOME/.dotfiles/aliases.sh
-
 # Theme
 source $HOME/.dotfiles/zsh/theme.sh
+
+# Aliases
+source $HOME/.dotfiles/aliases.sh
