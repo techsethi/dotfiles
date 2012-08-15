@@ -1,0 +1,12 @@
+compdef _git gadd=git-add
+compdef _git gb=git-branch
+compdef _git gco=git-checkout
+compdef _git gd=git-diff
+compdef _git gdc=git-diff
+compdef _git gitc=git-commit
+compdef _git gl=git-log
+compdef _git gsl=git-stash
+compdef _git gsp=git-stash
+compdef _git gss=git-stash
+compdef _git gst=git-status
+compdef _git gsu=git-submodule
