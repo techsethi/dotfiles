@@ -4,7 +4,7 @@ unbind C-b
 
 # get pbcopy/pbpaste working again on OS X
 # see https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
-# set-option -g default-command "reattach-to-user-namespace -l bash"
+set-option -g default-command "reattach-to-user-namespace -l zsh"
 
 # more responsive keys
 set -sg escape-time 1
