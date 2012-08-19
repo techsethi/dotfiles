@@ -1,3 +1,0 @@
-[submodule "tmux/tmux-MacOSX-pasteboard"]
-	path = tmux/tmux-MacOSX-pasteboard
-	url = git://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git
