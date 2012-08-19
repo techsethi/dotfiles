@@ -45,24 +45,28 @@ set -g default-terminal "screen-256color"
 
 # status bar
 set -g status-utf8 on
-set -g status-bg colour11
-set -g status-fg colour8
 set -g status-justify centre
-set -g status-left-length 40
 
-set -g status-left ' #[bold]❐ #S#[default] ⡇'
-set -g status-right '#[bold]#(whoami) ● #H#[default] '
-set -g status-right-length 60
-set -g status-left-length 60
+set -g status-left-length 52
+set -g status-right-length 451
+set -g status-fg white
+set -g status-bg colour234
+set -g window-status-activity-attr bold
+set -g pane-border-fg colour245
+set -g pane-active-border-fg colour39
+set -g message-fg colour16
+set -g message-bg colour221
+set -g message-attr bold
+set -g status-left '#[fg=colour235,bg=colour252,bold] ❐ #S #[fg=colour252,bg=colour238,nobold]⮀#[fg=colour245,bg=colour238,bold] #h #[fg=colour238,bg=colour234,nobold]⮀'
+set -g status-right '#[fg=colour238,bg=colour234,nobold]⮂#[fg=colour245,bg=colour238] #(date +"%F") #[fg=colour252]⮂#[fg=colour235,bg=colour252,bold] #(date +"%H:%M  ")'
+set -g window-status-format "#[fg=white,bg=colour234] #I #W "
+set -g window-status-current-format "#[fg=colour234,bg=colour39]⮀#[fg=colour25,bg=colour39,noreverse,bold] #I ⮁ #W #[fg=colour39,bg=colour234,nobold]⮀"
 
 # highlight active window
 setw -g window-status-current-bg colour166
 setw -g window-status-current-fg colour15
 setw -g window-status-current-attr bold
 setw -g window-status-current-format ' #I #W '
-
-set -g pane-active-border-fg yellow
-set -g pane-border-fg white
 
 # window status
 setw -g monitor-activity on
