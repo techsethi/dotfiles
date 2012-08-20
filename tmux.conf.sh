@@ -36,6 +36,7 @@ bind H resize-pane -L 5
 bind J resize-pane -D 5
 bind K resize-pane -U 5
 bind L resize-pane -R 5
+bind ` last-window
 
 # disable mouse
 setw -g mode-mouse off
