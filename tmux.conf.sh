@@ -77,5 +77,3 @@ unbind p
 bind p paste-buffer
 bind -t vi-copy 'v' begin-selection
 bind -t vi-copy 'y' copy-selection
-
-#set -g default-command "reattach-to-user-namespace -l `which bash`"
