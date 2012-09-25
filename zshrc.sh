@@ -62,7 +62,9 @@ setopt mark_dirs
 setopt correct
 setopt correct_all
 
-bindkey "^R" history-incremental-search-backward
+bindkey '^R' history-incremental-search-backward
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
 
 # Jobs
 setopt long_list_jobs
