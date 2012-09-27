@@ -38,6 +38,8 @@ setopt list_ambiguous
 setopt list_types
 unsetopt list_beep
 
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'   # case insensitive completion for cd etc *N*
+
 # History
 setopt append_history
 setopt extended_history
@@ -54,6 +56,7 @@ setopt cdable_vars
 setopt chase_links
 
 # Expansion & Globbing
+unsetopt case_glob
 setopt extended_glob
 setopt glob
 setopt mark_dirs
