@@ -85,3 +85,6 @@ source $HOME/.dotfiles/zsh/theme.sh
 
 # Aliases
 source $HOME/.dotfiles/aliases.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
