@@ -1,6 +1,8 @@
 # use same prefix as screen
-set -g prefix C-a
+set -g prefix '`'
 unbind C-b
+# hitting prefix twice sends literal prefix
+bind '`' send-prefix
 
 # get pbcopy/pbpaste working again on OS X
 # see https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
@@ -18,9 +20,6 @@ setw -g mode-keys vi
 # reload config
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
-# hitting prefix twice sends literal prefix
-bind C-a send-prefix
-
 # more logical pane creation keys
 bind | split-window -h
 bind - split-window -v
@@ -36,7 +35,7 @@ bind H resize-pane -L 5
 bind J resize-pane -D 5
 bind K resize-pane -U 5
 bind L resize-pane -R 5
-bind ` last-window
+bind Tab last-window
 
 # disable mouse
 setw -g mode-mouse off
