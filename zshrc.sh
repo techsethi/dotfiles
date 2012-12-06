@@ -2,6 +2,7 @@
 
 export PATH=/usr/local/sbin:/usr/local/bin:${PATH}
 export PATH="$HOME/bin:$PATH"
+export PATH=/usr/local/opt/postgresql/bin:${PATH}
 
 # Edit with Vim
 export EDITOR='vim -Nf'
