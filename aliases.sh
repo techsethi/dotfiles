@@ -22,7 +22,7 @@ which mvim > /dev/null && {
 alias ri='ri -Tf ansi'
 
 # Bundler
-alias be='nocorrect bundle exec'
+alias be='nocorrect noglob bundle exec'
 alias biv='bundle install --without production --path vendor/gems'
 alias bl='bundle list'
 
